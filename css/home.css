@@ -1,15 +1,13 @@
 html, body {
   height: 100%;
 }
-
 body {
     margin: 0;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Open Sans', sans-serif;
     display: flex;
     flex-flow: column nowrap;
     color: #262626;
 }
-
 header {
     text-align: center;
     background: #262626;
@@ -17,45 +15,119 @@ header {
     font-weight: bold;
     padding: 20px 0;
 }
-
 #main {
     flex: 1 0 auto;
-    padding-top: 50px;
     display: flex;
-    flex-flow: row wrap;
-    align-items: baseline;
-    justify-content: center;
-}
-
-.main__card {
-    display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     align-items: center;
-    border: 2px solid #262626;
-    border-radius: 10px;
-    width: 40%;
-    color:  #262626;
+    justify-content: flex-start;
 }
-
-.main__card h1 {
+#main h1 {
+    font-family: 'Roboto Mono', monospace;
     text-align: center;
+    font-size: 55px;
+    border-bottom: 1px solid #262626;
 }
-
 #main p {
     text-align: center;
+    max-width: 60%;
+    line-height: 1.5rem;
 }
 #main__me {
-    width: 30%;
+    width: 150px;
+    height: 150px;
     border: 2px solid #262626;
     border-radius: 100%;
+    margin-bottom: 15px;
 }
-
 #me-img {
     width: 100%;
     border-radius: 50%;
-    height: 100%;
+    height: auto;
 }
-
+.main__social {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    width: 50%;
+    margin: auto;
+}
+.main__social a {
+    color: #262626;
+    font-size: 1.5em;
+}
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+    color: white;
+}
+.fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+    color: white;
+}
+.fa-rss {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.fa-rss:hover {
+    background-color: #eb8231;
+    color: white;
+}
+.fa-instagram {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.fa-instagram:hover {
+    background-color: #ee456d;
+    color: white;
+}
+.fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+    color: white;
+}
+.fa-github {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.fa-github:hover {
+    background-color: #5a32a3;
+    color: white;
+}
 footer {
     width: 100%;
     text-align: center;
@@ -66,7 +138,11 @@ footer {
 
 
 @media only screen and (max-width: 600px) {
-  #main__me {
-    width: 50%;
-  }
+    #main h1 {
+        font-size: 35px;
+    }
+    #main__me {
+        width: 120px;
+        height: 120px;
+    }
 }
